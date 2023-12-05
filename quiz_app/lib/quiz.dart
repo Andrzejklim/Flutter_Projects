@@ -38,15 +38,15 @@ class _QuizState extends State<Quiz> {
     });
   }
 
-  // Widget? activeScreen;
+  // Widget? activeWidget;
   // @override
   // void initState(){
-  //   activeScreen = StartScreen(switchScreen);
+  //   activeScreen = ResultScreen(restart);
   //   super.initState();
   // }
-  // void switchScreen(){
+  // void restartQuiz(){
   //   setState(() {
-  //     activeScreen = const QuestionsScreen();
+  //     activeWidget = Quiz();
   //   });
   // }
 

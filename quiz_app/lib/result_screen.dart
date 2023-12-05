@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/questions_summary.dart';
+import 'package:quiz_app/quiz.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key, required this.chosenAnswers});
@@ -53,7 +54,12 @@ class ResultScreen extends StatelessWidget {
           const SizedBox(height: 30),
           // TextButton(onPressed: () {}, child: const Text("Restart quiz"))
           TextButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Quiz()),
+                );
+              },
               icon: const Icon(
                 Icons.restart_alt_outlined,
                 size: 32,
